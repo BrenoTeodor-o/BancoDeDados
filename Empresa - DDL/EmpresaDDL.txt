@@ -1,0 +1,94 @@
+/*
+|	BRENO RIBEIRO TEODORO - 15059823
+|	Criar o DDL(SQL) - criação, alteração e exclusão
+|
+|
+*/
+-- Table: empresa."Empresa"
+
+-- DROP TABLE empresa."Empresa";
+
+CREATE TABLE empresa."Empresa"
+(
+  cod serial NOT NULL,
+  "razaoSocial" character varying,
+  "nomeFantasia" character varying,
+  cnpj numeric NOT NULL,
+  telefone numeric,
+  CONSTRAINT pk_empresa PRIMARY KEY (cod)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE empresa."Empresa"
+  OWNER TO postgres;
+
+-- Table: empresa."Setor"
+
+-- DROP TABLE empresa."Setor";
+
+CREATE TABLE empresa."Setor"
+(
+  cod serial NOT NULL,
+  nome character varying,
+  cod_empresa serial NOT NULL,
+  CONSTRAINT pk_setor PRIMARY KEY (cod),
+  CONSTRAINT fk_setor FOREIGN KEY (cod_empresa)
+      REFERENCES empresa."Empresa" (cod) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE empresa."Setor"
+  OWNER TO postgres;
+
+-- Table: empresa."Departamento"
+
+-- DROP TABLE empresa."Departamento";
+
+CREATE TABLE empresa."Departamento"
+(
+  cod serial NOT NULL,
+  nome character varying,
+  cod_setor serial NOT NULL,
+  CONSTRAINT pk_departamento PRIMARY KEY (cod),
+  CONSTRAINT fk_departamento FOREIGN KEY (cod)
+      REFERENCES empresa."Setor" (cod) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE empresa."Departamento"
+  OWNER TO postgres;
+
+-- Table: empresa."Funcionario"
+
+-- DROP TABLE empresa."Funcionario";
+
+CREATE TABLE empresa."Funcionario"
+(
+  matricula numeric,
+  nome character varying,
+  cpf numeric NOT NULL,
+  telefone numeric,
+  salario money,
+  cod_dep serial NOT NULL,
+  CONSTRAINT pk_funcionario PRIMARY KEY (cpf),
+  CONSTRAINT fk_funcionario FOREIGN KEY (cod_dep)
+      REFERENCES empresa."Departamento" (cod) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE empresa."Funcionario"
+  OWNER TO postgres;
+
+ /*---------------------------------------------------------------------------------*/
+
+ DROP TABLE empresa."Empresa", empresa."Setor", empresa."Departamento", empresa."Funcionario";
+
+ 
+ /*---------------------------------------------------------------------------------*/

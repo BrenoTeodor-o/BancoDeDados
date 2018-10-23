@@ -1,0 +1,282 @@
+2018-09-30 14:11:58 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 14:12:22 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 14:12:53 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 14:13:25 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 14:13:44 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 14:16:38 ERROR  : ERROR:  value "342343324432534523543524352345243523454353425234542352345235234523542345243534543523525" is out of range for type integer
+LINE 1: ...aaaaaaaaaaaaaaaaaaaaaaaaaaaa2342342342342'::text, '342343324...
+                                                             ^
+2018-09-30 14:16:40 ERROR  : ERROR:  value "342343324432534523543524352345243523454353425234542352345235234523542345243534543523525" is out of range for type integer
+LINE 1: ...aaaaaaaaaaaaaaaaaaaaaaaaaaaa2342342342342'::text, '342343324...
+                                                             ^
+2018-09-30 14:16:49 ERROR  : ERROR:  value "23423523454354354354354325342543253453425" is out of range for type integer
+LINE 1: ...aaaaaaaaaaaaa2342342342342'::text, '41'::integer, '234235234...
+                                                             ^
+2018-09-30 14:16:53 ERROR  : ERROR:  value "23423523454354354354354325342543253453425" is out of range for type integer
+LINE 1: ...aaaaaaaaaaaaa2342342342342'::text, '41'::integer, '234235234...
+                                                             ^
+2018-09-30 14:16:59 ERROR  : ERROR:  value "23423523454354354354354325342543253453425" is out of range for type integer
+LINE 1: ...aaaaaaaaaaaaa2342342342342'::text, '41'::integer, '234235234...
+                                                             ^
+2018-09-30 14:17:32 ERROR  : ERROR:  duplicate key value violates unique constraint "pkEmpresa"
+DETAIL:  Key (cod)=(2) already exists.
+2018-09-30 14:17:41 ERROR  : ERROR:  duplicate key value violates unique constraint "pkEmpresa"
+DETAIL:  Key (cod)=(2) already exists.
+2018-09-30 14:18:19 ERROR  : ERROR:  relation "empresa" does not exist
+LINE 1: select * from Empresa
+                      ^
+2018-09-30 14:18:31 ERROR  : ERROR:  relation "empresa" does not exist
+LINE 1: select * from empresa;
+                      ^
+2018-09-30 14:18:48 ERROR  : ERROR:  relation "empresa" does not exist
+LINE 1: select * from Empresa;
+                      ^
+2018-09-30 14:19:13 ERROR  : ERROR:  relation "empresaddl" does not exist
+LINE 1: SELECT * FROM EmpresaDDL;
+                      ^
+2018-09-30 14:19:33 ERROR  : ERROR:  relation "empresa" does not exist
+LINE 1: SELECT "razaoSocial" FROM Empresa;
+                                  ^
+2018-09-30 14:21:38 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 14:21:53 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 14:22:12 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 14:22:26 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 14:24:09 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 14:24:35 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 14:24:49 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 14:25:05 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 14:25:15 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 14:29:34 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 14:29:50 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 14:31:12 ERROR  : ERROR:  unterminated quoted identifier at or near ""Empresa;"
+LINE 1: Select * FROM "Empresa;
+                      ^
+2018-09-30 14:31:24 ERROR  : ERROR:  relation "Empresa" does not exist
+LINE 1: SELECT "razaoSocial" FROM "Empresa";
+                                  ^
+2018-09-30 14:32:44 ERROR  : ERROR:  insert or update on table "Departamento" violates foreign key constraint "cod_setor"
+DETAIL:  Key (cod_setor)=(1) is not present in table "Setor".
+2018-09-30 14:32:48 ERROR  : ERROR:  insert or update on table "Departamento" violates foreign key constraint "cod_setor"
+DETAIL:  Key (cod_setor)=(2) is not present in table "Setor".
+2018-09-30 14:34:30 ERROR  : ERROR:  insert or update on table "Departamento" violates foreign key constraint "cod_setor"
+DETAIL:  Key (cod_setor)=(3) is not present in table "Setor".
+2018-09-30 14:38:11 ERROR  : ERROR:  column "Teste razão social" does not exist
+LINE 3:     VALUES ("Teste razão social", "teste NOME Fa N t  a si a...
+                    ^
+2018-09-30 14:38:31 ERROR  : ERROR:  column "dadsadasdasd" does not exist
+LINE 3:     VALUES ("dadsadasdasd", "asdasdasdasd", 12345678901234, ...
+                    ^
+2018-09-30 14:41:37 ERROR  : ERROR:  column "jucilei" does not exist
+LINE 3:     VALUES ("jucilei");
+                    ^
+2018-09-30 14:41:46 ERROR  : ERROR:  column "aa" does not exist
+LINE 3:     VALUES ("aa");
+                    ^
+2018-09-30 14:42:21 ERROR  : ERROR:  column "aa" does not exist
+LINE 3:     VALUES ("aa");
+                    ^
+2018-09-30 14:42:43 ERROR  : ERROR:  syntax error at or near ";"
+LINE 2:             "nome");
+                           ^
+2018-09-30 14:43:38 ERROR  : ERROR:  insert or update on table "Setor" violates foreign key constraint "cod_empresa"
+DETAIL:  Key (cod_empresa)=(1) is not present in table "Empresa".
+2018-09-30 14:44:08 ERROR  : ERROR:  insert or update on table "Setor" violates foreign key constraint "cod_empresa"
+DETAIL:  Key (cod_empresa)=(2) is not present in table "Empresa".
+2018-09-30 14:44:39 ERROR  : ERROR:  cannot drop table empresa."Departamento" because other objects depend on it
+DETAIL:  constraint cod_dep on table empresa."Funcionario" depends on table empresa."Departamento"
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2018-09-30 14:49:16 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 14:49:36 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 14:50:58 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 14:51:10 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 14:52:31 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 14:52:49 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 14:53:24 ERROR  : ERROR:  relation "pk_setor" already exists
+2018-09-30 14:54:40 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 14:54:53 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 14:57:24 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 14:57:42 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 14:59:35 ERROR  : ERROR:  column "razao social" does not exist
+LINE 3:     VALUES ("razao social", "Nome Fantasia", 132164, 1231351...
+                    ^
+HINT:  Perhaps you meant to reference the column "Empresa.razaoSocial".
+2018-09-30 15:04:31 ERROR  : ERROR:  duplicate key value violates unique constraint "pf_funcionario"
+DETAIL:  Key (cpf)=(13213213212) already exists.
+2018-09-30 15:12:21 ERROR  : ERROR:  relation "empresa" does not exist
+LINE 2: SELECT * FROM empresa."Empresa", empresa,"Setor", empresa."D...
+                                         ^
+2018-09-30 15:18:31 ERROR  : ERROR:  insert or update on table "Funcionario" violates foreign key constraint "cod_dep"
+DETAIL:  Key (cod_dep)=(3) is not present in table "Departamento".
+2018-09-30 15:18:50 ERROR  : ERROR:  duplicate key value violates unique constraint "pf_funcionario"
+DETAIL:  Key (cpf)=(13213213212) already exists.
+2018-09-30 15:22:02 ERROR  : ERROR:  duplicate key value violates unique constraint "pf_funcionario"
+DETAIL:  Key (cpf)=(13213213212) already exists.
+2018-09-30 15:22:19 ERROR  : ERROR:  insert or update on table "Funcionario" violates foreign key constraint "cod_dep"
+DETAIL:  Key (cod_dep)=(6) is not present in table "Departamento".
+2018-09-30 15:24:38 ERROR  : ERROR:  column "cod_dep" does not exist
+LINE 1: SELECT cod_dep FROM empresa."Departamento";
+               ^
+2018-09-30 15:25:13 ERROR  : ERROR:  column reference "cod" is ambiguous
+LINE 1:  SELECT cod FROM empresa."Empresa", empresa."Setor", empresa...
+                ^
+2018-09-30 15:25:25 ERROR  : ERROR:  column reference "cod" is ambiguous
+LINE 1:  SELECT cod FROM empresa."Empresa", empresa."Setor", empresa...
+                ^
+2018-09-30 15:26:49 ERROR  : ERROR:  insert or update on table "Funcionario" violates foreign key constraint "cod_dep"
+DETAIL:  Key (cod_dep)=(7) is not present in table "Departamento".
+2018-09-30 15:27:26 ERROR  : ERROR:  insert or update on table "Departamento" violates foreign key constraint "cod_setor"
+DETAIL:  Key (cod_setor)=(4) is not present in table "Setor".
+2018-09-30 15:27:35 ERROR  : ERROR:  insert or update on table "Setor" violates foreign key constraint "cod_empresa"
+DETAIL:  Key (cod_empresa)=(4) is not present in table "Empresa".
+2018-09-30 15:28:03 ERROR  : ERROR:  insert or update on table "Setor" violates foreign key constraint "cod_empresa"
+DETAIL:  Key (cod_empresa)=(5) is not present in table "Empresa".
+2018-09-30 15:31:42 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 15:31:57 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 15:33:19 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 15:33:34 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 15:33:41 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 15:34:25 ERROR  : ERROR:  there is no unique constraint matching given keys for referenced table "Empresa"
+2018-09-30 15:35:03 ERROR  : ERROR:  there is no unique constraint matching given keys for referenced table "Empresa"
+2018-09-30 15:36:03 ERROR  : ERROR:  there is no unique constraint matching given keys for referenced table "Empresa"
+2018-09-30 15:36:17 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 15:36:31 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 15:36:51 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 15:37:33 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 15:37:43 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 15:42:25 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 15:42:47 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 15:45:44 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 15:45:59 ERROR  : ERROR:  column "amgettuple" does not exist
+LINE 1: ..._am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple...
+                                                             ^
+2018-09-30 15:46:12 ERROR  : ERROR:  syntax error at or near "AND"
+LINE 1: SELECT opcname FROM pg_opclass WHERE opcmethod= AND NOT opcd...
+                                                        ^
+2018-09-30 16:33:01 ERROR  : ERROR:  column "razaosocial" of relation "Empresa" does not exist
+LINE 2: SET razaoSocial = 'update razao social', nomeFantasia = 'upd...
+            ^
+2018-09-30 16:33:21 ERROR  : ERROR:  column "razaosocial" of relation "Empresa" does not exist
+LINE 2: SET razaoSocial = 'update razao social', nomeFantasia = 'upd...
+            ^
+2018-09-30 16:33:49 ERROR  : ERROR:  syntax error at or near ","
+LINE 2: SET razaoSocial, nomeFantasia = 'update razao social', 'upda...
+                       ^
+2018-09-30 16:34:34 ERROR  : ERROR:  syntax error at or near "'update razao social'"
+LINE 2: SET razaoSocial 'update razao social'
+                        ^
+2018-09-30 16:34:48 ERROR  : ERROR:  syntax error at or near ""update razao social""
+LINE 2: SET razaoSocial "update razao social"
+                        ^
+2018-09-30 16:34:57 ERROR  : ERROR:  syntax error at or near ""razao social""
+LINE 3: SET razaoSocial "razao social"
+                        ^
+2018-09-30 16:35:31 ERROR  : ERROR:  column "razao social" does not exist
+LINE 3: SET razaoSocial = "razao social"
+                          ^
+HINT:  Perhaps you meant to reference the column "Empresa.razaoSocial".
+2018-09-30 16:36:25 ERROR  : ERROR:  syntax error at or near "'update nome Fansasia'"
+LINE 2: SET nomeFantasia 'update nome Fansasia'
+                         ^
+2018-09-30 16:36:32 ERROR  : ERROR:  column "nomefantasia" of relation "Empresa" does not exist
+LINE 2: SET nomeFantasia = 'update nome Fansasia'
+            ^
+2018-09-30 16:44:42 ERROR  : ERROR:  insert or update on table "Setor" violates foreign key constraint "fk_setor"
+DETAIL:  Key (cod_empresa)=(4) is not present in table "Empresa".
+2018-09-30 16:46:30 ERROR  : ERROR:  INSERT has more target columns than expressions
+LINE 2:             nome, cod_empresa)
+                          ^
+2018-09-30 16:46:39 ERROR  : ERROR:  insert or update on table "Setor" violates foreign key constraint "fk_setor"
+DETAIL:  Key (cod_empresa)=(5) is not present in table "Empresa".
+2018-09-30 16:47:40 ERROR  : ERROR:  insert or update on table "Setor" violates foreign key constraint "fk_setor"
+DETAIL:  Key (cod_empresa)=(6) is not present in table "Empresa".
+2018-09-30 16:48:23 ERROR  : ERROR:  insert or update on table "Departamento" violates foreign key constraint "fk_departamento"
+DETAIL:  Key (cod)=(4) is not present in table "Setor".
+2018-09-30 16:49:29 ERROR  : ERROR:  insert or update on table "Funcionario" violates foreign key constraint "fk_funcionario"
+DETAIL:  Key (cod_dep)=(4) is not present in table "Departamento".
+2018-09-30 16:50:06 ERROR  : ERROR:  column "cod_dep" of relation "Departamento" does not exist
+LINE 2:             nome, cod_dep)
+                          ^
+2018-09-30 16:52:58 ERROR  : ERROR:  update or delete on table "Setor" violates foreign key constraint "fk_departamento" on table "Departamento"
+DETAIL:  Key (cod)=(3) is still referenced from table "Departamento".
+2018-09-30 16:53:26 ERROR  : ERROR:  update or delete on table "Setor" violates foreign key constraint "fk_departamento" on table "Departamento"
+DETAIL:  Key (cod)=(3) is still referenced from table "Departamento".
+2018-09-30 16:53:52 ERROR  : ERROR:  update or delete on table "Departamento" violates foreign key constraint "fk_funcionario" on table "Funcionario"
+DETAIL:  Key (cod)=(3) is still referenced from table "Funcionario".
