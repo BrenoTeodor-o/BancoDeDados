@@ -350,4 +350,12 @@ SELECT P.nome, C.nome
             ON D.cod = C.cod_disc
             WHERE C.cod = 1
  -- SELECT DISTINCT -> evita repetição de valores constantes, não utilizar para valores * em um SELECT <-
- 
+
+-- 3.5 - Todas as disciplinas de um determinado professor, selecionado pela matrícula do professor
+SELECT D.nome, P.nome
+    FROM escola."Professor" P
+        INNER JOIN escola."Disciplina" D
+        ON P.cod_disc = D.cod
+            INNER JOIN escola."Matricula" M
+            ON D.cod = M.cod_disc
+-- 3.6 - Todas as notas de um determinado bimestre, de uma disciplina específica, que estejam abaixo de 5
