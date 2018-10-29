@@ -1,5 +1,4 @@
 Cenário 3: Clube social
-
 1. O clube oferece uma infraestrutura aos associados cadastrados pelo Nome, Endereço, Telefone, E-mail, sendo que cada associado pode ter apenas um  plano mensal, porém pode mudar de plano a qualquer momento. 
 Os planos de associação contêm valores diferentes + os atributos: se permite voto em assembléia, se permite voto em eleição, se permite dependentes 
 2. Cada sócio dos planos que permitem dependentes, pode ter vários dependentes relacionados a ele, com nome, data_nascimento e parentesco. Parentesco é um cadastro com código e nome do parentesco
