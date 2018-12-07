@@ -17,6 +17,9 @@ CREATE VIEW view_alunos_determinado_curso_selecionaCod_OrderBy_NomeAluno
                     ON C.cod = D.cod
                     WHERE C.cod = 5
                         ORDER BY A.nome);
+
+                        Select * from ,
+
 --    5.1.2 - Idem ao 5.1.1, porém selecionado pelo nome do curso
 CREATE VIEW view_select_Curso_nome
 (SELECT C.nome AS "curso_ nome"
